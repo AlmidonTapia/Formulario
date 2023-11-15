@@ -117,7 +117,7 @@ body * {
     /*display: non;*/
     width:.60rem;
     background-color: #201b2c;
-    border-radius: ;
+    border-radius: .5rem;
   }
   ::-webkit-scrollbar-thumb{
     height: 10px;
