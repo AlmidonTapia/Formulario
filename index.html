@@ -4,22 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Login</title>
+    <title>Formulario</title>
 </head>
 <body>
     <div class="main-login">
         <div class="left-login">
-            <h1>Bienvenidos<br>Iniciar sesion</h1>
-            <img src="assets/img/" alt="logo" class="left-login-image">
+            <h1>Bienvenido a NEXA </h1>
+            <img src="assets/img/user2.png" alt="logo" class="left-login-image">
+            <p>*Seleccione su foto de perfil</p>
+            <input type="file" class="textfield" id="profile-imagen">
         </div>
         <div class="right-login">
             <div class="card-login">
-                <h1>LOGIN</h1>
+                <h1>Registrarse</h1>
                 <div class="textfield">
                     <label for="usuario"></label>
+                    <input type="text" name="usuario" autocomplete="off"placeholder="Nombre">
+                    <input type="email" name="" autocomplete="off"placeholder="E-mail">
+                    <input type="number" name="telefono" aute="off"placeholder="telefono">
+                    <label for="password"></label>
+                    <input type="password" name="contrasena" placeholder="Contraseña">
                 </div>
+                <button class="btn-login">INICIAR</button>
             </div>
         </div>
     </div>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
