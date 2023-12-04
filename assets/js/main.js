@@ -22,6 +22,7 @@ function mostrarError(input, mensaje) {
   divError.classList.add('error');
   divError.textContent = mensaje;
   input.insertAdjacentElement('afterend', divError);
+  alert(mensaje);
 }
 
 // Función para validar el formulario
