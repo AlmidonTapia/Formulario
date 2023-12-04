@@ -1,8 +1,9 @@
-const image = document.querySelector("img"),
-    input = document.getElementById("profile-imagen");
-input = addEventListener("change", () => {
-    image.src = URL.createObjectURL(input.files[0]);
+const image = document.querySelector("img");
+const input = document.getElementById("profile-imagen");
+input.addEventListener("change", () => {
+  image.src = URL.createObjectURL(input.files[0]);
 });
+
 // Obtener los elementos del formulario
 const formulario = document.querySelector('.card-login');
 const nombreInput = formulario.querySelector('input[name="usuario"]');
@@ -21,7 +22,7 @@ function mostrarError(input, mensaje) {
   const divError = document.createElement('div');
   divError.classList.add('error');
   divError.textContent = mensaje;
-  input.insertAdjacentElement('afterend', divError);
+  input.parentNode.insertBefore(divError, input.nextSibling);
   alert(mensaje);
 }
 
